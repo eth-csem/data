@@ -1,0 +1,3 @@
+directory: 2013_North_Atlantic/
+minimum_period: 25.0
+description: "Contains the files produced by Florian Rickers (Rickers et al., 2013). This is a subset of the European data (events numbered 1 to 52) plus some additional data (events numbered 3001 to 3033). The ray coverage is extracted from the 25 s processed data with their corresponding content files, which contain a list of recordings used for each event."

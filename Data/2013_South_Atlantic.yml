@@ -1,0 +1,3 @@
+directory: 2013_South_Atlantic/
+minimum_period: 55.0
+description: "Contains the raw data compiled by Lorenzo Colli (Colli et al., 2013), as well as a data summary from which the source and receiver locations, and all the used ray paths can be read."

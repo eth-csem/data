@@ -1,0 +1,3 @@
+directory: 2009_Australia/
+minimum_period: 40.0
+description: "Contains processed and unprocessed data of the 2010 Australia inversion (Fichtner et al., 2009). The ray coverage is extracted from the 40 s processed data with their corresponding content files, which contain a list of recordings used for each event."

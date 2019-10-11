@@ -1,0 +1,3 @@
+directory: 2015_Iberia/
+minimum_period: 15.0
+description: "Contains only a list of source-receiver pairs extracted from LASIF_IB. This corresponds to the Western Mediterranean Model of Fichtner & Villasenor (2015)."

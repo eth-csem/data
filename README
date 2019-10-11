@@ -1,0 +1,108 @@
+This contains a summary of the data that went into the CSEM so far. Since the storage of all data is obviously impossible, this only contains source-receiver pairs and information on the minimum period. More details on some of the subregions may be found in CSEM_archive/CSEM_DATA.
+
+
+2009_Australia
+--------------
+
+Contains processed and unprocessed data of the 2010 Australia inversion (Fichtner et al., 2009). The ray coverage is extracted from the 40 s processed data with their corresponding content files, which contain a list of recordings used for each event.
+
+Minimum period: 40 s.
+
+
+2013_Anatolia
+-------------
+
+Contains raw and processed data compiled by Fichtner et al. (2013) for Anatolia. The events filtered to 10 s and numbered from 1000 upwards are the ones actually used for the inversion.
+
+Minimum period: 10 s.
+
+
+2013_Europe
+-----------
+
+This folder contains the original data files, processed and unprocessed of the FWI for Europe and western Asia (Fichtner et al., 2013). The ray coverage is extracted from the 50 s processed data with their corresponding content files, which contain a list of recordings used for each of the events.
+
+Minimum period: 50 s.
+
+
+2013_North_Atlantic
+-------------------
+
+Contains the files produced by Florian Rickers (Rickers et al., 2013). This is a subset of the European data (events numbered 1 to 52) plus some additional data (events numbered 3001 to 3033). The ray coverage is extracted from the 25 s processed data with their corresponding content files, which contain a list of recordings used for each event.
+
+Minimum period: 25 s.
+
+
+2013_South_Atlantic
+-------------------
+
+Contains the raw data compiled by Lorenzo Colli (Colli et al., 2013), as well as a data summary from which the source and receiver locations, and all the used ray paths can be read.
+
+Minimum period: 55 s.
+
+
+2015_Iberia
+-----------
+
+Contains only a list of source-receiver pairs extracted from LASIF_IB. This corresponds to the Western Mediterranean Model of Fichtner & Villasenor (2015).
+
+Minimum period: 15 s.
+
+2016_Japan
+----------
+
+These are the source-receiver pairs of Saule Simute's 2016 Japan model, published in Simute et al. (2016).
+
+Minimum period: 20 s.
+
+
+2017_Iberia
+-----------
+
+Contains only a list of source-receiver pairs extracted from LASIF_IBS. This is a higher-frequency submodel of 2015_Iberia, including noise correlations of the IberArray data. This model was not published in a dedicated paper but presented within the Generation 1 CSEM (Fichtner et al., GRL 2018).
+
+In addition, this folder contains a subfolder with all the original noise correlations from Antonio Villasenor, plus a few Python codes to select pieces of these data for waveform inversion.
+
+Minimum period: 8 s.
+
+2017_Global
+-----------
+
+These are the source-receiver pairs of Michael Afanasiev's global inversion using SPECFEM. This was published in Afanasiev et al. (2015).
+
+Minimum period: 60 s.
+
+2017_Japan
+----------
+
+This is the continuation of Saule Simute's 2016 Japan inversion at higher frequencies. The folder only contains the source-receiver pairs. The model has not been published in a dedicated paper but presented in the Generation 1 CSEM (Fichtner et al., 2018).
+
+Minimum period: 15 s.
+
+2017_Marmara
+------------
+
+These are the source-receiver pairs of Yesim Cubuk's Sea of Marmara inversion. The model was published in Cubuk-Sabuncu et al. (2018).
+
+Minimum period: 8 s.
+
+2017_North_America
+------------------
+
+These are the source-receiver pairs of Lion Krischer's North America inversion. The model was published as Krischer et al. (2018).
+
+Minimum period: 30 s.
+
+2017_South_East_Asia
+--------------------
+
+These are the source-receiver pairs from the South-East-Asia inversion of Erdinc Saygin, using ambient noise correlations. The model has not been published in a dedicated paper but presented in the Generation 1 CSEM (Fichtner et al., 2018).
+
+Minimum period: 20 s.
+
+2019_Eastern_Mediterranean
+--------------------------
+
+These are the source-receiver pairs of Nienke Blom's Eastern Mediterranean inversion. A paper describing the model has been submitted.
+
+Minimum period: 28 s.

@@ -1,0 +1,3 @@
+directory: 2017_Global/
+minimum_period: 60.0
+description: "This folder contains the source-receiver pairs from the first few global iteration steps, mainly intended to fix static offsets induced by different implementations of attenuation."

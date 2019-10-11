@@ -1,0 +1,3 @@
+directory: 2017_Iberia/
+minimum_period: 8.0
+description: "Contains only a list of source-receiver pairs extracted from LASIF_IBS. This is a higher-frequency submodel of 2015_Iberia, including noise correlations of the IberArray data. Not yet published. In addition, this folder contains a subfolder with all the original noise correlations from Antonio Villasenor, plus a few Python codes to select pieces of these data for waveform inversion."

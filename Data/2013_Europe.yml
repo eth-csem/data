@@ -1,0 +1,3 @@
+directory: 2013_Europe/
+minimum_period: 50.0
+description: "This folder contains the original data files, processed and unprocessed of the FWI for Europe and western Asia (Fichtner et al., 2013). The ray coverage is extracted from the 50 s processed data with their corresponding content files, which contain a list of recordings used for each of the events."
