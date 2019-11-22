@@ -37,7 +37,7 @@ plot_rays=False
 lat_min=[20.0] 		#- Minimum latitude array [deg].
 lat_max=[60.0] 		#- Maximum latitude array [deg].
 lon_min=[-15.0] 	#- Minimum longitude array [deg].
-lon_max=[55.0] 		#- Maximum longitude array [deg].
+lon_max=[65.0] 		#- Maximum longitude array [deg].
 
 #- Global maps (Orthograpic projection). ------------------
 
@@ -68,7 +68,7 @@ n_region=[]
 for dataset in range(len(datasets)):
 
 	#- Open yaml file of that specific dataset.
-	fid=open('../Data/'+datasets[dataset]['info_file'])
+	fid=open('../Data/'+datasets[dataset]['directory']+'/'+datasets[dataset]['info_file'])
 	info=yaml.load(fid)
 	fid.close()
 	periods.append(float(info['minimum_period']))

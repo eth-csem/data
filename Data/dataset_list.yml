@@ -40,3 +40,6 @@
 13:
   directory: 2019_Eastern_Mediterranean
   info_file: 2019_Eastern_Mediterranean.yml
+14:
+  directory: 2019_Iran
+  info_file: 2019_Iran.yml
