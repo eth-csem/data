@@ -8,38 +8,41 @@
   directory: 2009_Australia
   info_file: 2009_Australia.yml
 3:
+  directory: 2020_Africa
+  info_file: 2020_Africa.yml
+4:
   directory: 2013_Europe
   info_file: 2013_Europe.yml
-4:
+5:
   directory: 2013_North_Atlantic
   info_file: 2013_North_Atlantic.yml
-5:
+6:
   directory: 2013_Anatolia
   info_file: 2013_Anatolia.yml
-6:
+7:
   directory: 2017_Marmara
   info_file: 2017_Marmara.yml
-7:
+8:
   directory: 2013_South_Atlantic
   info_file: 2013_South_Atlantic.yml
-8:
+9:
   directory: 2017_Iberia
   info_file: 2017_Iberia.yml
-9:
+10:
   directory: 2015_Iberia
   info_file: 2015_Iberia.yml
-10:
+11:
   directory: 2017_South_East_Asia
   info_file: 2017_South_East_Asia.yml
-11:
+12:
   directory: 2016_Japan
   info_file: 2016_Japan.yml
-12:
+13:
   directory: 2017_Japan
   info_file: 2017_Japan.yml
-13:
+14:
   directory: 2019_Eastern_Mediterranean
   info_file: 2019_Eastern_Mediterranean.yml
-14:
+15:
   directory: 2019_Iran
   info_file: 2019_Iran.yml

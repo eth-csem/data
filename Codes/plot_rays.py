@@ -7,6 +7,10 @@ import auxiliary as aux
 import cartopy.crs as ccrs
 import cartopy.feature as cfeature
 
+plt.rcParams["font.family"] = "serif"
+plt.rcParams.update({'font.size': 70})
+plt.subplots(1, figsize=(25,12))
+
 start=time.time()
 
 #==========================================================
@@ -15,20 +19,20 @@ start=time.time()
 
 #- Scale and plot settings. -------------------------------
 
-global_regional='regional'			#- 'regional' regional map, 'global' for global map.
+global_regional='global'			#- 'regional' regional map, 'global' for global map.
 
-event_markersize=7 				
+event_markersize=55 				
 event_marker='*'
-event_color=[1.0, 0.0, 0.0]
+event_color=[0.75, 0.75, 0.75]
 
-station_markersize=5 				
+station_markersize=35 				
 station_marker='^'
-station_color=[0.0, 1.0, 0.0]
+station_color=[0.75, 0.75, 0.75]
 
 ray_width=0.25
 
 plot_sources_and_receivers=True
-plot_rays=False
+plot_rays=True
 
 #- Regional maps (Mercator projection). -------------------
 #- If these are vectors, then more than 1 map will be
@@ -41,8 +45,8 @@ lon_max=[65.0] 		#- Maximum longitude array [deg].
 
 #- Global maps (Orthograpic projection). ------------------
 
-lon_centre=[0.0]
-lat_centre=[40.0]
+lon_centre=[-15.0]
+lat_centre=[20.0]
 
 #==========================================================
 #- March through all the files and collect data.
@@ -121,7 +125,7 @@ for n in np.arange(N):
 		ax=plt.axes(projection=ccrs.Orthographic(central_longitude=lon_centre[n], central_latitude=lat_centre[n], globe=None))
 		ax.set_global()
 
-	ax.add_feature(cfeature.NaturalEarthFeature('cultural', 'admin_0_countries', '50m', edgecolor='black', facecolor=cfeature.COLORS['land']),zorder=2)
+	#ax.add_feature(cfeature.NaturalEarthFeature('cultural', 'admin_0_countries', '50m', edgecolor='black', facecolor=cfeature.COLORS['land']),zorder=2)
 	ax.gridlines(zorder=3)
 
 	evx=[]
@@ -154,15 +158,14 @@ for n in np.arange(N):
 		print('plot sources and stations')
 
 		for idx in range(len(datasets)):
-			plt.scatter(stlo[idx][:],stla[idx][:],color=station_color, marker=station_marker, s=station_markersize, transform=ccrs.Geodetic(),zorder=4)
-			plt.scatter(evlo[idx][:],evla[idx][:],color=event_color, marker=event_marker, s=event_markersize, transform=ccrs.Geodetic(),zorder=4)
+			plt.scatter(stlo[idx][:],stla[idx][:],color=station_color, marker=station_marker, s=station_markersize, edgecolor='k', linewidth=0.5, transform=ccrs.Geodetic(),zorder=4)
+			plt.scatter(evlo[idx][:],evla[idx][:],color=event_color, marker=event_marker, s=event_markersize, edgecolor='k', linewidth=0.5, transform=ccrs.Geodetic(),zorder=4)
 
 	#- Finish. ------------------------------------------------
 
-	ax.coastlines(resolution='50m',color='blue',zorder=5)
+	ax.coastlines(resolution='50m',color='k',zorder=5)
 	end=time.time()
 	print(['elapsed time: ', end-start, ' s'])
-
+	plt.savefig('../Output/'+str(n)+'.png',format='png',dpi=700)
 	plt.show()
-	#plt.savefig('../Output/'+str(n)+'.png',format='png',dpi=700)
-	#plt.close()
+
